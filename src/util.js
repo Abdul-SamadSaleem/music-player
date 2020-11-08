@@ -1,63 +1,71 @@
 import { v4 as uuidv4 } from "uuid";
+// Song Imports
+import cold_world from "./Songs/cold_world.mp3";
+import eight_zero_eight from "./Songs/eight_zero_eight.mp3"
+import doja from "./Songs/doja.mp3"
+import wolves from "./Songs/wolves.mp3"
+import geeked_up from "./Songs/geeked_up.mp3"
+import end_of_the_world from "./Songs/end_of_the_world.mp3"
+
 function chillHop() {
   return [
     {
-      name: "Beaver Creek",
+      name: "Cold World",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
-      artist: "Aso, Middle School, Aviino",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=10075",
-      color: ["#205950", "#2ab3bf"],
+        "https://images.genius.com/208858748e25140f9f5e1096605004fc.500x500x1.jpg",
+      artist: "Eric Reprid",
+      audio: cold_world,
+      color: ["green", "black"],
       id: uuidv4(),
       active: true,
     },
     {
-      name: "Daylight",
+      name: "808",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
-      artist: "Aiguille",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9272",
-      color: ["#EF8EA9", "#ab417f"],
+        "https://m.media-amazon.com/images/I/81oD0xjGqPL._SS500_.jpg",
+      artist: "Da Beatfreakz feat. dutchavelli, DigDat & B Young",
+      audio: eight_zero_eight,
+      color: ["red", "black"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Keep Going",
+      name: "Doja",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
-      artist: "Swørn",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9222",
+        "https://i1.wp.com/hiphoplord.com/wp-content/uploads/2020/10/BKIJWQ-21.jpg?fit=500%2C472&ssl=1",
+      artist: "Xavier Weeks",
+      audio: doja,
       color: ["#CD607D", "#c94043"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Nightfall",
+      name: "Wolves",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
-      artist: "Aiguille",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9148",
-      color: ["#EF8EA9", "#ab417f"],
+        "https://images.genius.com/3d6365c0669690d38f1cc0f0c2fca322.1000x1000x1.png",
+      artist: "Big Sean ft. Post Malone",
+      audio: wolves,
+      color: ["brown", "#ab417f"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Reflection",
+      name: "Geeked Up",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
-      artist: "Swørn",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9228",
-      color: ["#CD607D", "#c94043"],
+        "https://i.scdn.co/image/ab67616d0000b2734e528518a22d1c9b66d98b68",
+      artist: "Jiggy Jerms",
+      audio: geeked_up,
+      color: ["#4484c2", "#f8c301"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Under the City Stars",
+      name: "End of the World",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
-      artist: "Aso, Middle School, Aviino",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=10074",
-      color: ["#205950", "#2ab3bf"],
+        "https://images.shazam.com/coverart/t526306493-b1529556691_s400.jpg",
+      artist: "Jay Hoodie",
+      audio: end_of_the_world,
+      color: ["#a1bec6", "#458a99"],
       id: uuidv4(),
       active: false,
     },
