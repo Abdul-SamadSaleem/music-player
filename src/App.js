@@ -1,7 +1,12 @@
+import Player from "./Components/Player"
+import Song from "./Components/Song"
+
+
 const App = () => {
   return (
     <div className="App">
-     <h1>Music Player</h1>
+     <Song />
+     <Player />
     </div>
   );
 }
