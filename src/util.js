@@ -23,7 +23,7 @@ function chillHop() {
       name: "808",
       cover:
         "https://m.media-amazon.com/images/I/81oD0xjGqPL._SS500_.jpg",
-      artist: "Da Beatfreakz feat. dutchavelli, DigDat & B Young",
+      artist: "Da Beatfreakz",
       audio: eight_zero_eight,
       color: ["red", "black"],
       id: uuidv4(),
@@ -43,7 +43,7 @@ function chillHop() {
       name: "Wolves",
       cover:
         "https://images.genius.com/3d6365c0669690d38f1cc0f0c2fca322.1000x1000x1.png",
-      artist: "Big Sean ft. Post Malone",
+      artist: "Big Sean",
       audio: wolves,
       color: ["brown", "#ab417f"],
       id: uuidv4(),
