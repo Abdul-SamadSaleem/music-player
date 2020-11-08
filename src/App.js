@@ -1,3 +1,6 @@
+// Import Styles
+import "./Styles/app.scss"
+// Import Components
 import Player from "./Components/Player"
 import Song from "./Components/Song"
 
