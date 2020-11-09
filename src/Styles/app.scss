@@ -17,9 +17,10 @@ body {
 h3,
 h4 {
   font-weight: 400;
-  color: rgb(100, 100, 100);
+  color: rgb(177, 114, 114);
 }
 
-@import "./song";
-@import "./player";
-@import "./library";
+@import "./_song";
+@import "./_player";
+@import "./_library";
+@import "./_nav.scss";
