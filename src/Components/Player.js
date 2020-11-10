@@ -1,8 +1,10 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay, faAngleLeft, faAngleRight, faPause } from "@fortawesome/free-solid-svg-icons"
+import { faPlay, faAngleLeft, faAngleRight, faPause,faVolumeDown, } from "@fortawesome/free-solid-svg-icons"
 
 export default function Player({ audioRef, currentSong, isPlaying, setIsPlaying, setSongInfo, songInfo,setSongs, songs, setCurrentSong}) {
+
+  const [activeVolume, setActiveVolume] = useState(false);
 
   useEffect(() => {
     const newSongs = songs.map((song) => {
@@ -65,6 +67,11 @@ const trackAnim = {
   transform: `translateX(${songInfo.animationPercentage}%)`
 }
 
+const changeVolume = (e) => {
+  let value = e.target.value;
+  audioRef.current.volume = value;
+  setSongInfo({ ...songInfo, volume: value });
+};
 
     return (
         <div className="player">
@@ -80,6 +87,10 @@ const trackAnim = {
                 <FontAwesomeIcon onClick={() => skipTrackHandler("skip-back")} className="skip-back" size="2x" icon={faAngleLeft} />
                 <FontAwesomeIcon onClick={playSongHandler} className="play" size="2x" icon={isPlaying ? faPause : faPlay } />
                 <FontAwesomeIcon onClick={() => skipTrackHandler("skip-forward")} className="skip-forward" size="2x" icon={faAngleRight} />
+                <FontAwesomeIcon onClick={() => setActiveVolume(!activeVolume)} icon={faVolumeDown} /> 
+                {activeVolume && (<input onChange={changeVolume} value={songInfo.volume} max="1" min="0" step="0.01" type="range"
+          />
+        )}
             </div>
         </div>
     )
