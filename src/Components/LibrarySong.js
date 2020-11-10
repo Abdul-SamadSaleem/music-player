@@ -1,3 +1,5 @@
+import {playAudio} from "../util"
+
 const LibrarySong = ({song, songs, setCurrentSong, id, audioRef, isPlaying, setSongs}) => {
 
 const songSelectHandler = () => {
@@ -18,7 +20,7 @@ const newSongs = songs.map((song) => {
 })
 setSongs(newSongs)
 // check if the song is playing
-
+playAudio(isPlaying, audioRef)
 };
 
     return (
