@@ -7,7 +7,7 @@ import Player from "./Components/Player"
 import Song from "./Components/Song"
 import Library from "./Components/Library"
 // Import util
-import data from "./util"
+import data from "./data"
 import Nav from "./Components/Nav"
 
 
